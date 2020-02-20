@@ -6,4 +6,7 @@ case object BOOKED extends CabStatus
 case object ON_TRIP extends CabStatus
 
 // available cabs
-case class CabState(driverId: DriverId, status: CabStatus, location: Coordinate)
+case class CabState(cabId: CabId,
+                    driverId: DriverId,
+                    status: CabStatus,
+                    location: Coordinate)
