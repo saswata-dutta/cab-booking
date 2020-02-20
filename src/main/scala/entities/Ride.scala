@@ -12,6 +12,6 @@ case class Ride(id: RideId,
                 driverId: DriverId,
                 startTs: Long,
                 stopTs: Option[Long],
-                startCood: Coordinate,
-                stopCood: Option[Coordinate],
+                origin: Coordinate,
+                destination: Option[Coordinate],
                 status: RideStatus)
